@@ -11,7 +11,7 @@ sudo apt install atom git vanilla-gnome-desktop
 
 # install Orchis theme
 git clone https://github.com/vinceliuice/Orchis-theme
-sh Orchis-theme/install.sh -t yellow
+bash Orchis-theme/install.sh -t yellow
 
 # enable shell theming and apply themes
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
@@ -20,6 +20,7 @@ gsettings set org.gnome.desktop.interface gtk-theme Orchis-yellow
 
 # normal mouse behavior
 gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
 
 # terminal
 gsettings set org.gnome.Terminal.Legacy.Settings theme-variant 'dark'
